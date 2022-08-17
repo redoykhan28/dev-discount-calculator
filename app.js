@@ -1,9 +1,19 @@
-//field section
+//field section1
 document.getElementById('input-field').addEventListener('keyup', function (event) {
 
     const keys = event.target.value;
 
     const headText = document.getElementById('head1');
+    headText.innerText = keys;
+
+});
+
+//field section2
+document.getElementById('input-field3').addEventListener('keyup', function (event) {
+
+    const keys = event.target.value;
+
+    const headText = document.getElementById('head3');
     headText.innerText = keys;
 
 });
