@@ -16,6 +16,18 @@ document.getElementById('input-field3').addEventListener('keyup', function (even
     const headText = document.getElementById('head3');
     headText.innerText = keys;
 
+    let bt = document.getElementById('btn');
+
+    if (keys <= 100) {
+
+        bt.removeAttribute('disabled');
+    }
+
+    else {
+
+        bt.setAttribute('disabled', true);
+    }
+
 });
 
 //button section
